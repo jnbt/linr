@@ -18,7 +18,7 @@ describe ::Linr::Encoder::Line do
     it "escapes" do
       expected =  'A\ test\ measurement'
       expected << ',some\ tag=with\ whitespace'
-      expected << ' some\ long\ field=5'
+      expected << ' some\ long\ field=5i'
       expected << " 123456789"
       output.must_equal expected
     end
@@ -37,7 +37,7 @@ describe ::Linr::Encoder::Line do
     it "escapes" do
       expected =  'A\,test\,measurement'
       expected << ',some\,tag=with\,comma'
-      expected << ' some\,long\,field=5'
+      expected << ' some\,long\,field=5i'
       expected << " 123456789"
       output.must_equal expected
     end
@@ -60,12 +60,12 @@ describe ::Linr::Encoder::Line do
     let(:source) do
       {
         measurement: "series",
-        fields: { A: true, B: false, C: 'A"B' }
+        fields: { A: true, B: false, C: 'A"B', D: 5, E: 1.1 }
       }
     end
 
     it "dumps" do
-      output.must_equal 'series A=true,B=false,C="A\"B"'
+      output.must_equal 'series A=true,B=false,C="A\"B",D=5i,E=1.1'
     end
   end
 end
