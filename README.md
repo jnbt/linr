@@ -1,5 +1,13 @@
 # linr
 
+[![Gem Version](https://badge.fury.io/rb/linr.svg)](https://rubygems.org/gems/linr)
+[![Build Status](https://travis-ci.org/jnbt/linr.svg?branch=master)](https://travis-ci.org/jnbt/linr)
+[![Coverage Status](https://coveralls.io/repos/jnbt/linr/badge.svg?branch=master)](https://coveralls.io/r/jnbt/linr?branch=master)
+[![Code Climate](https://codeclimate.com/github/jnbt/linr/badges/gpa.svg)](https://codeclimate.com/github/jnbt/linr)
+[![Gemnasium](https://img.shields.io/gemnasium/jnbt/linr.svg?style=flat)](https://gemnasium.com/jnbt/linr)
+[![Inline docs](http://inch-ci.org/github/jnbt/linr.svg?branch=master)](http://inch-ci.org/github/jnbt/linr)
+[![Yard Docs](http://img.shields.io/badge/yard-docs-blue.svg?style=flat)](http://www.rubydoc.info/github/jnbt/linr/master)
+
 A simple UDP client for [InfluxDB](https://influxdb.com)
 
 :construction: :warning:
