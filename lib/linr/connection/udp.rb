@@ -1,3 +1,5 @@
+require "socket"
+
 module Linr
   module Connection
     # Connects to a InfluxDB UDP port
