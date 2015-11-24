@@ -5,10 +5,10 @@ module Linr
     # A simple null logger without any output
     # @api private
     class Null < ::Logger
-      def initialize(*args)
+      def initialize(*_args)
       end
 
-      def add(*args, &block)
+      def add(*_args, &_block)
       end
     end
   end
