@@ -1,3 +1,5 @@
+require "logger"
+
 module Linr
   module Logger
     # A simple null logger without any output
