@@ -10,6 +10,10 @@ describe ::Linr::Connection::UDP do
     socket.bind(host, port)
   end
 
+  after do
+    socket.close
+  end
+
   it "sends data as passed" do
     payload = "measurement,foo=bar,bat=baz value=12,otherval=21 1439587925"
     subject.send(payload)

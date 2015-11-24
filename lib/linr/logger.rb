@@ -1,0 +1,1 @@
+require "linr/logger/null"
