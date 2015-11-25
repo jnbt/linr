@@ -10,9 +10,6 @@
 
 A simple UDP client for [InfluxDB](https://influxdb.com)
 
-:construction: :warning:
-**This project is in very stage. Things will change!**
-
 ## Install
 
     $ [sudo] gem install linr
