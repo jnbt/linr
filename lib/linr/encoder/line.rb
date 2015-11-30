@@ -51,7 +51,7 @@ module Linr
         when TrueClass, FalseClass
           value.to_s
         else
-          escape_qoute(escape_value(value))
+          escape_quote(escape_value(value))
         end
       end
 
@@ -67,7 +67,7 @@ module Linr
           .gsub('"', '\"')
       end
 
-      def escape_qoute(input)
+      def escape_quote(input)
         %("#{input}")
       end
 
