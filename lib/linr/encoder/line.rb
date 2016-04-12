@@ -62,9 +62,9 @@ module Linr
 
       def escape_value(input)
         input.to_s
-          .gsub(/\s/, '\ ')
-          .gsub(",", '\,')
-          .gsub('"', '\"')
+             .gsub(/\s/, '\ ')
+             .gsub(",", '\,')
+             .gsub('"', '\"')
       end
 
       def escape_quote(input)
@@ -73,8 +73,8 @@ module Linr
 
       def escape_key(input)
         input.to_s
-          .gsub(/\s/, '\ ')
-          .gsub(",", '\,')
+             .gsub(/\s/, '\ ')
+             .gsub(",", '\,')
       end
     end
   end
