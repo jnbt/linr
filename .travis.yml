@@ -8,12 +8,13 @@ rvm:
   - "2.2"
   - "2.1"
   - "2.0"
-  - "1.9.3"
   - ruby-head
   - rbx-2
-  - jruby-19mode
   - jruby-head
 matrix:
+  include:
+    - rvm: jruby
+      env: JRUBY_OPTS="--2.0"
   allow_failures:
     - rvm: ruby-head
     - rvm: jruby-head
