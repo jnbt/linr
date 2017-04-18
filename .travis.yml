@@ -11,10 +11,10 @@ rvm:
   - ruby-head
   - jruby-1.7.26
   - jruby-head
+env:
+  global:
+    - JRUBY_OPTS="--2.0"
 matrix:
-  include:
-    - rvm: jruby
-      env: JRUBY_OPTS="--2.0"
   allow_failures:
     - rvm: ruby-head
     - rvm: jruby-head
