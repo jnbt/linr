@@ -56,7 +56,7 @@ module Linr
       end
 
       def encode_numberic(value)
-        return "#{value}i" if value.is_a?(Fixnum)
+        return "#{value}i" if value.is_a?(Integer)
         value
       end
 
