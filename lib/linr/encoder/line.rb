@@ -41,6 +41,7 @@ module Linr
 
       def dump_collection(data, prefix = " ", &block)
         return unless data && !data.empty?
+
         prefix + data.map(&block).join(",")
       end
 
@@ -57,6 +58,7 @@ module Linr
 
       def encode_numberic(value)
         return "#{value}i" if value.is_a?(Integer)
+
         value
       end
 
