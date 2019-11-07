@@ -1,4 +1,4 @@
-lib = File.expand_path("../lib", __FILE__)
+lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "linr/version"
 
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(test|spec|features)/})
   end
 
-  spec.executables   = spec.files.grep(%r{^bin\/}) { |f| File.basename(f) }
+  spec.executables = spec.files.grep(%r{^bin\/}) { |f| File.basename(f) }
 
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3")
 
