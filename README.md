@@ -4,9 +4,8 @@
 [![Build Status](https://travis-ci.org/jnbt/linr.svg?branch=master)](https://travis-ci.org/jnbt/linr)
 [![Coverage Status](https://coveralls.io/repos/jnbt/linr/badge.svg?branch=master)](https://coveralls.io/r/jnbt/linr?branch=master)
 [![Code Climate](https://codeclimate.com/github/jnbt/linr/badges/gpa.svg)](https://codeclimate.com/github/jnbt/linr)
-[![Gemnasium](https://img.shields.io/gemnasium/jnbt/linr.svg?style=flat)](https://gemnasium.com/jnbt/linr)
-[![Inline docs](http://inch-ci.org/github/jnbt/linr.svg?branch=master)](http://inch-ci.org/github/jnbt/linr)
-[![Yard Docs](http://img.shields.io/badge/yard-docs-blue.svg?style=flat)](http://www.rubydoc.info/github/jnbt/linr/master)
+[![Inline docs](https://inch-ci.org/github/jnbt/linr.svg?branch=master)](https://inch-ci.org/github/jnbt/linr)
+[![Yard Docs](https://img.shields.io/badge/yard-docs-blue.svg?style=flat)](https://www.rubydoc.info/github/jnbt/linr/master)
 
 A simple UDP client for [InfluxDB](https://influxdb.com)
 
@@ -19,7 +18,7 @@ Or add it to your Gemfile, etc.
 ## Usage
 
 Connect to a InfluxDB host via
-[UDP](https://influxdb.com/docs/v0.9/write_protocols/udp.html)
+[UDP](https://docs.influxdata.com/influxdb/v1.7/supported_protocols/udp/)
 and send a series:
 
 ```ruby
@@ -27,17 +26,17 @@ require "linr"
 
 client = Linr::Client.new(host: "127.0.0.1", port: 8836)
 client.write(
- measurement: "cpu_load_short",
- tags: { host: "server01", region: "us-west" },
- fields: { value: 0.64 },
- timestamp: 1434055562
+  measurement: "cpu_load_short",
+  tags: { host: "server01", region: "us-west" },
+  fields: { value: 0.64 },
+  timestamp: 1434055562
 )
 ```
 
 ## References
 
-* [Line Protocol Syntax](https://influxdb.com/docs/v0.9/write_protocols/write_syntax.html)
-* [InfluxDB UDP](https://influxdb.com/docs/v0.9/write_protocols/udp.html)
+* [Line Protocol Syntax](https://docs.influxdata.com/influxdb/v1.7/write_protocols/line_protocol_reference)
+* [InfluxDB UDP](https://docs.influxdata.com/influxdb/v1.7/supported_protocols/udp/)
 
 ## Testing
 
