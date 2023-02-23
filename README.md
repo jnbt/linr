@@ -1,8 +1,8 @@
 # linr
 
 [![Gem Version](https://badge.fury.io/rb/linr.svg)](https://rubygems.org/gems/linr)
-[![Build Status](https://travis-ci.org/jnbt/linr.svg?branch=master)](https://travis-ci.org/jnbt/linr)
-[![Coverage Status](https://coveralls.io/repos/jnbt/linr/badge.svg?branch=master)](https://coveralls.io/r/jnbt/linr?branch=master)
+[![Build Status](https://github.com/jnbt/linr/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/jnbt/linr/actions?query=branch%3Amaster)
+[![Coverage Status](https://coveralls.io/repos/github/jnbt/linr/badge.svg?branch=master)](https://coveralls.io/github/jnbt/linr?branch=master)
 [![Code Climate](https://codeclimate.com/github/jnbt/linr/badges/gpa.svg)](https://codeclimate.com/github/jnbt/linr)
 [![Inline docs](https://inch-ci.org/github/jnbt/linr.svg?branch=master)](https://inch-ci.org/github/jnbt/linr)
 [![Yard Docs](https://img.shields.io/badge/yard-docs-blue.svg?style=flat)](https://www.rubydoc.info/github/jnbt/linr/master)
