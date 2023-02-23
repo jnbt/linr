@@ -24,9 +24,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "coveralls", "~> 0.8"
   spec.add_development_dependency "inch", "~> 0.7"
   spec.add_development_dependency "minitest", "~> 5.10"
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "rubocop", "~> 0.48"
+  spec.add_development_dependency "simplecov", "~> 0.18.0"
+  spec.add_development_dependency "simplecov-lcov", "~> 0.8.0"
 end
